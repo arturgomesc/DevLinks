@@ -11,6 +11,10 @@ body {
 
 #container {
     width: 360px;
-    height: 712px;
     border: 1px solid red;
+    margin: auto; /* margin alinha nos lados, mas nao em cima nem em baixo */
+}
+
+#profile img {
+    width: 112px;
 }
