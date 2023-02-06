@@ -1,20 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--compatibilidade para navegadores antigos-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--viewport: se adequa ao tamanho da página que o usuário utiliza, como zoom, formato de celular, etc-->
-    <title>DevLinks</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <div id="container">
-        <div id="profile">
-            <img
+    <head>
+
+        <link 
+        rel="preconnect" 
+        href="https://fonts.googleapis.com" />
+        <link 
+        rel="preconnect" 
+        href="https://fonts.gstatic.com" crossorigin />
+        <link 
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Tai+Heritage+Pro:wght@400;700&display=swap" 
+        rel="stylesheet"
+        />
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--compatibilidade para navegadores antigos-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--viewport: se adequa ao tamanho da página que o usuário utiliza, como zoom, formato de celular, etc-->
+        <title>DevLinks</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div id="container">
+            <div id="profile">
+                <img
                 src="./assets/avatar.png"
                 alt="Foto de Artur Gomes usando um bone para tras, de camisa preta, em uma praia."
-            />
+                />
+                <p>@arturgomesc</p>
+            </div>
+            <ul>
+                <li>
+                    <a href="#">Inscrever-se no NLW</a>
+                </li>
+                <li>
+                    <a href="#">Portifólio</a>
+                </li>
+                <li>
+                    <a href="https://github.com/arturgomesc" target="_blank">Meu Github</a> <!-- o target é utilizado para com que abra outra aba ao clicar no link -->
+                </li>
+            </ul>
         </div>
-    </div>
-</body>
+    </body>
 </html>

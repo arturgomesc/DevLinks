@@ -1,5 +1,13 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    /*background-image: url(./assets/Interface=Mobile\,\ Theme=Dark\ mode.jpg);
+    /*
+    background-image: url(./assets/Interface=Mobile\,\ Theme=Dark\ mode.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -9,12 +17,28 @@ body {
     background: url(./assets/Interface=Mobile\,\ Theme=Dark\ mode.jpg) no-repeat top center/cover;
 }
 
+body * {
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+}
+
 #container {
     width: 360px;
-    border: 1px solid red;
-    margin: auto; /* margin alinha nos lados, mas nao em cima nem em baixo */
+    margin: 56px auto 0; /* 56px: em cima, auto: nos lados, 0: em baixo. */
+    /* para entender como está posicionado o container, basta utilizar o elemento border. */
+}
+
+#profile {
+    text-align: center;
+    padding: 24px;
 }
 
 #profile img {
-    width: 112px;
+    width: 112px; 
+}
+
+#profile p {
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 8px;
 }
