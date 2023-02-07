@@ -23,9 +23,10 @@ body * {
 }
 
 #container {
+    /* para entender como está posicionado o container, basta utilizar o elemento border. */
     width: 360px;
     margin: 56px auto 0; /* 56px: em cima, auto: nos lados, 0: em baixo. */
-    /* para entender como está posicionado o container, basta utilizar o elemento border. */
+    padding: 0 24px;
 }
 
 #profile {
@@ -48,14 +49,62 @@ body * {
 ul {
     list-style: none;
 
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    padding: 24px 0;
 }
 
 ul li a {
-    border:  1px solid red;
-
     display: flex; /* Torna o elemento um flex container automaticamente transformando todos os seus filhos diretos em flex itens. */
     align-items: center; /* alinha o elemento na horizontal */
     justify-content: center; /* alinha o elemento na horizontal */
 
     padding: 16px 24px;
+
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+
+    text-decoration: none;
+    font-weight: 500;
+
+    transition: background 0.2s;
+}
+
+/* pseudo-selector */
+ul li a:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1.5px solid white;
+}
+
+/*  social links */
+
+#social-links {
+    display: flex;
+    justify-content: center;
+
+    padding: 24px 0;
+
+    font-size: 24px;
+}
+
+#social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+
+    transition: background 0.2s;
+    border-radius: 50%;
+}
+
+#social-links a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 16px;
+    border-radius: 50%;
 }
