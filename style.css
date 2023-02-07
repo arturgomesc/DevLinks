@@ -30,7 +30,7 @@ body * {
 
 #profile {
     text-align: center;
-    padding: 24px;
+    padding: 24px; /* padding: define a distancia de um elemento a sua borda. */
 }
 
 #profile img {
@@ -48,10 +48,14 @@ body * {
 ul {
     list-style: none;
 
-    display: flex;
-    gap: 8px;
 }
 
-ul li {
+ul li a {
     border:  1px solid red;
+
+    display: flex; /* Torna o elemento um flex container automaticamente transformando todos os seus filhos diretos em flex itens. */
+    align-items: center; /* alinha o elemento na horizontal */
+    justify-content: center; /* alinha o elemento na horizontal */
+
+    padding: 16px 24px;
 }
