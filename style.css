@@ -44,7 +44,8 @@ body * {
 
 #container {
     /* para entender como está posicionado o container, basta utilizar o elemento border. */
-    width: 360px;
+    width: 100%;
+    max-width: 588px;
     margin: 56px auto 0; /* 56px: em cima, auto: nos lados, 0: em baixo. */
     padding: 0 24px;
 }
